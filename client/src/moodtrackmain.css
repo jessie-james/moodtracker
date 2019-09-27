@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+}
 *{
     margin:0;
     background-color:#F2F2F2;
     padding:0;
     font-family: 'Montserrat',sans-serif;
+    font-weight: 200;
+    letter-spacing: 1pt;
 }
 a{
     text-emphasis: none;
