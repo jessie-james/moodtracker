@@ -8,7 +8,7 @@ const path = require("path")
 require("dotenv").config();
 
 app.use("/", express.json())
-app.use("/api", expressJwt({ secret: process.env.SECRET }));
+app.use("/api", expressJwt({ secret: process.env.SECRET || "fuck this shit" }));
 app.use(express.static(path.join(__dirname, "client", "build")))
 
 // ...
