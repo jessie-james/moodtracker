@@ -94,28 +94,3 @@ class Login extends Component {
 export default withContext(Login);
 
 
-
-/* handleChange = (e) => {
-        const { name, value } = e.target
-        this.setState({
-            [name]: value
-        })
-    } */
-
-/* clearInputs = () => {
-        this.setState({
-            username: "",
-            password: "",
-            errorMessage: ""
-        })
-    } */
-
-/* handleSubmit = (e) => {
-        e.preventDefault();
-        this.props.login(this.state)
-            .then(() => this.props.history.push("/todos"))
-            .catch(err => {
-                this.setState({errorMessage: err.response.data.message})
-            })
-    } */
-

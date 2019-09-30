@@ -23,7 +23,7 @@ function App() {
                 <ProtectedRoute path="/addclient" component={AddClient} />
                 <ProtectedRoute path="/addsurvey" component={CreateSurvey} />
                 <ProtectedRoute path="/clientProfile/:_id/" component ={ClientProfile}/>
-                <Route exact path="/" component={Signup}/>
+                <Route exact path="/" component={Login}/>
             </Switch>
         </div>
     )

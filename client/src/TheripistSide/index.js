@@ -17,9 +17,10 @@ class TheripistDash extends Component {
                     <Link className="add-div" to="/addclient">+</Link>
                     <Link className="link-add" to="/addclient">Add Client</Link>
                 </div>
-            
             </div>
         )
         
     }
-}export default withContext(TheripistDash)
+}
+
+export default withContext(TheripistDash)

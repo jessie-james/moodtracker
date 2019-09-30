@@ -27,4 +27,5 @@ function ClientDashProfile(props) {
             </div>
         </div>
     )
-} export default withContext(ClientDashProfile)
+}
+export default withContext(ClientDashProfile)
