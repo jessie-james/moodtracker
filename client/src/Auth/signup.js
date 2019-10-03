@@ -21,7 +21,7 @@ class Signup extends Component {
     }
     
 
-    isTheripist = () => {
+    isTherapist = () => {
         this.setState({
             isStudent: false,
         })
@@ -48,7 +48,7 @@ class Signup extends Component {
         e.preventDefault();
         //if isStudent is true then this .props.history needs to push to /client Dash and a client signup.
         this.props.signup(this.state)
-            .then(() => this.props.history.push("/theripistdashboard"))
+            .then(() => this.props.history.push("/therapistdashboard"))
             .catch(err => {
                 this.setState({ errorMessage: err.response.data.message })
             })
@@ -60,7 +60,7 @@ class Signup extends Component {
                      <div className="user-type-container">
                         <div className={
                             this.state.isStudent ? "user-type not-selected": " user-type selected"} 
-                            onClick={this.isTheripist}>Theripist</div>
+                            onClick={this.isTherapist}>Therapist</div>
                         <div className={
                             this.state.isStudent ? "user-type selected": "user-type not-selected"} onClick={this.isStudent}>Student</div>
                     </div>

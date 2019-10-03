@@ -2,8 +2,8 @@ import React, {Component} from "react"
 import { Link } from 'react-router-dom'
 import { withContext } from '../AppContext'
 import ClientDashProfile from './CurrentClients/ClientDashProfile'
-import './theripistdash.css'
-class TheripistDash extends Component {
+import './therapistdash.css'
+class TherapistDash extends Component {
     componentDidMount() {
         this.props.getClients()
     }
@@ -23,4 +23,4 @@ class TheripistDash extends Component {
     }
 }
 
-export default withContext(TheripistDash)
+export default withContext(TherapistDash)

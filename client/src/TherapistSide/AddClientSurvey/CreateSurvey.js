@@ -32,7 +32,7 @@ class CreateSurvey extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.addSurvey(this.state)
-            .then(() => this.props.history.push("/theripistdashboard"))
+            .then(() => this.props.history.push("/therapistdashboard"))
             .catch(err => {
                 this.setState({ errorMessage: "Both Questions are required" })
             })

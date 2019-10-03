@@ -9,8 +9,10 @@ class ClientProfile extends Component {
         this.props.getClients();
         this.props.getClient(this.props.match.params._id);
     }
+    
 
     render() {
+
         let {clientName, clientphoneNum, clientCode, clientImg} = this.props.selectedClient
         return (
             <div className="full-profile">

@@ -7,7 +7,7 @@ class ClientSurvey extends Component {
     render() {
         let survey = this.props.surveys.find(survey => survey.clientCode === this.props.code)
         survey === undefined ? survey = { moodQuestion: '', extraQuestion: '' } : null
-        console.log(survey)
+
         return (
             <div className="add-client-survey">
                 <h2>Mood Track Survey</h2>
